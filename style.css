@@ -3,26 +3,24 @@
 	padding: 0px;
 }
 .container{
-	width: 1100px;
-	/*border: 1px solid black;*/
+	width: 100%;
 	margin: 0px auto;
 }
 
 
 .top-left{
 	float: left;
-	width: 37.3%;
-	height: 50px;
-	padding-left: 10px;
+	width: 20%;
+	height: 140px;
 	background-color: #f0f0f7;
-	margin-left: 1px;
+	text-align: center;
 	
 }
 .top-left a{
-	padding: 5px;
+	padding: 10px;
 	display: inline-block;
 	margin-left: 25px;
-	margin-top: 10px;
+	margin-top: 20px;
 	color: #fff;
 	font-weight: bold;
 	text-decoration: none;
@@ -36,43 +34,85 @@
 .top-left a:hover{
 	background: green;
 	margin left: 25px;
-	padding: 5px;
+	padding: 10px;
 	color: yellow;
-	margin-top: 10px;
+	margin-top: 20px;
 	border-radius: 0px;
 	border-top-right-radius: 20px;
 	border-bottom-left-radius: 20px;
 
 }
 
-.top-right{
+.top-right {
 	float: left;
-	width: 49.05%;
-	height: 50px;
+	width: 79.2%;
+	height: 140px;
 	background-color: #f0f0f7;
 	padding-left: 10px;
 	
 	
 }
-.top-right button{
+nav{
+	width: 98%;
+	background: gray;
+	text-align: center;
+	padding: 5px;
+	margin-left: 5px;
+	margin: 10px;
+	overflow: hidden;
+	transition: .4s;
+}
+nav ul{
+	list-style: none;
+}
+
+nav ul li{
 	display: inline-block;
 	margin-top: 10px;
 	margin-left: 25px;
-	padding: 5px;
-	background: red;
+	padding: 5px 5px;
 	color: #fff;
 	font-weight: bold;
 	border-radius: 30px;
 	
 }
-.top-right button:hover{
-	margin-top: 10px;
-	margin-left: 25px;
-	padding: 5px;
-	background: green;
-	color: yellow;
-	font-weight: bold;
-	border-radius: 30px;
+
+nav ul li a{
+	display: inline-block;
+	padding: 5px 5px;
+	text-decoration:none;
+	color: #fff;
+}
+
+nav ul li ul{
+	background: red;
+	position: absolute;
+	height: 0px;
+	overflow: hidden;
+	transition: 0.4s;
+
+
+}
+nav ul li:hover ul{
+	height: 150px;
+	width: 200px;
+	background: red;
+	position: absolute;
+	transition: 0.4s;
+
+}
+nav ul li ul li ul{
+	background: red;
+	position: absolute;
+	width: 200px;
+	overflow: hidden;
+	transition: 0.4s;
+}
+nav ul li:hover ul li ul{
+	width: 200px;
+	background: red;
+	position: absolute;
+	transition: 0.4s;
 }
 
 .background-img{
@@ -116,19 +156,32 @@
 .bottom div{
 	width: 24%;
 	margin-bottom: 5px;
-	padding: 10px;
+	padding: 15px;
 	box-sizing: border-box;
-	margin-top: 30px;
+	margin-top: 20px;
 	display: inline-block;
 }
+.bottom p{
+	text-align: center;
+	padding-top: 10px;
+	
+}
+.bottom p a:link{
+	text-decoration: none;
+}
+.bottom p a:hover{
+	color: red;
+	text-decoration: underline;
+}
+
 .bottom .box-1{
 	float: left;
 	width: 200px;
-	height: 200px;
+	height: 250px;
 	background: none;
 	margin: 30px;
 	overflow: hidden;
-	border: 1px solid green;
+	border: 0px;
 	padding: 0px;
 
 }
@@ -137,10 +190,10 @@
 	margin-left: 15px;
 	float: left;
 	width: 200px;
-	height: 200px;
+	height: 250px;
 	margin: 32px;
 	overflow: hidden;
-	border: 1px solid green;
+	border: 0px;
 	padding: 0px;
 }
 .bottom .box-3{
@@ -148,18 +201,26 @@
 	margin-left: 15px;
 	float: left;
 	width: 200px;
-	height: 200px;
-	border: 1px solid green;
+	height: 250px;
+	border: 0px;
 	margin: 32px;
 	overflow: hidden;
 	padding: 0px;
 }
 .bottom .box-4{
-	float: right;
 	float: left;
 	width: 200px;
-	height: 200px;
-	border: 1px solid green;
+	height: 250px;
+	border: 0px;
+	margin: 32px;
+	overflow: hidden;
+	padding: 0px;
+}
+.bottom .box-4{
+	float: left;
+	width: 200px;
+	height: 250px;
+	border: 0px;
 	margin: 32px;
 	overflow: hidden;
 	padding: 0px;
